@@ -1,0 +1,13 @@
+n = 16
+ans1 = 1 / 4
+ans2 = 1 / 5
+
+sum1 = 0.
+sum2 = 0.
+
+for i in range(1, n + 1):
+    sum1 += 1 / n * (((i - 1) / n) ** 3 + 4 * pow((i - 0.5) / n, 3) + (i / n) ** 3) / 6
+for i in range(1, n + 1):
+    sum2 += 1 / n * (((i - 1) / n) ** 4 + 4 * pow((i - 0.5) / n, 4)+(i / n) ** 4) / 6
+print(ans1 - sum1)
+print(ans2 - sum2)
